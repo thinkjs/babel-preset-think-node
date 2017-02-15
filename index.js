@@ -1,12 +1,12 @@
 var plugins = {
   //es2015
-  transformEs2015ModuleCommonjs: require('babel-plugin-transform-es2015-modules-commonjs'),
+  "transform-es2015-modules-commonjs": require('babel-plugin-transform-es2015-modules-commonjs'),
   //es2016
-  transformExponentiationOperator: require('babel-plugin-transform-exponentiation-operator'),
+  "transform-exponentiation-operator": require('babel-plugin-transform-exponentiation-operator'),
   //es2017
-  syntaxTrailingFunctionCommas: require('babel-plugin-syntax-trailing-function-commas'),
-  transformAsyncToGenerator: require('babel-plugin-transform-async-to-generator'),
-  transformRuntime: [require('babel-plugin-transform-runtime'), {}],
+  "syntax-trailing-function-commas": require('babel-plugin-syntax-trailing-function-commas'),
+  "transform-async-to-generator": require('babel-plugin-transform-async-to-generator'),
+  "transform-runtime": [require('babel-plugin-transform-runtime'), {}],
 };
 
 function extend() {
