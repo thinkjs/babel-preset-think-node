@@ -7,7 +7,7 @@ var plugins = {
   "syntax-trailing-function-commas": require('babel-plugin-syntax-trailing-function-commas'),
   "transform-async-to-generator": require('babel-plugin-transform-async-to-generator'),
   "transform-runtime": [require('babel-plugin-transform-runtime'), {}],
-  "transform-object-rest-spread": requrie("babel-plugin-transform-object-rest-spread")
+  "transform-object-rest-spread": require("babel-plugin-transform-object-rest-spread")
 };
 
 function extend() {
@@ -18,7 +18,7 @@ function extend() {
       target[k] = args[i][k];
     }
   }
-  return tareget;
+  return target;
 }
 
 function preset(opts) {
