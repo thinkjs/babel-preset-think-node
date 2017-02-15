@@ -6,6 +6,7 @@ var plugins = {
   //es2017
   syntaxTrailingFunctionCommas: require('babel-plugin-syntax-trailing-function-commas'),
   transformAsyncToGenerator: require('babel-plugin-transform-async-to-generator'),
+  transformRuntime: [require('babel-plugin-transform-runtime'), {}],
 };
 
 function extend() {
