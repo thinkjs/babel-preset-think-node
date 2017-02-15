@@ -13,7 +13,7 @@ babel plugin preset for thinkjs
   - async / await ([transform-async-to-generator](http://babeljs.io/docs/plugins/transform-async-to-generator))
 - babel-transform-runtime
 - babel-plugin-transform-object-rest-spread
-
+- babel-plugin-transform-es2015-parameters
 
 ## Install
 
