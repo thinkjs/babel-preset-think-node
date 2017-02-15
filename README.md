@@ -12,6 +12,7 @@ babel plugin preset for thinkjs
   - trailing function commas ([syntax-trailing-function-commas](http://babeljs.io/docs/plugins/syntax-trailing-function-commas))
   - async / await ([transform-async-to-generator](http://babeljs.io/docs/plugins/transform-async-to-generator))
 - babel-transform-runtime
+- babel-plugin-transform-object-rest-spread
 
 
 ## Install
@@ -60,6 +61,9 @@ set option for all plugin in object first level, or specific plugin by plugin na
         "polyfill": false,
         "regenerator": true,
         "moduleName": "babel-runtime"
+      },
+      "transform-object-rest-spread": {
+        "useBuiltIns": true
       }
     }]
   ]
