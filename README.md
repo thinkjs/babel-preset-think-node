@@ -63,7 +63,8 @@ set option for all plugin in object first level, or specific plugin by plugin na
       },
       "transform-object-rest-spread": {
         "useBuiltIns": true
-      }
+      },
+      "object-rest-spread": false //set false if you want close this transform plugin
     }]
   ]
 }

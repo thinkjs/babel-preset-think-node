@@ -34,10 +34,14 @@ function preset(opts) {
         plugin = [plugin, {}];
       }
       
+      if( opts[plugins[pluginName]] === false ) {
+        return undefined;
+      }
+
       var pluginOpt = plugin[1];
       plugin[1] = extend({}, pluginOpt, commonOpts, opts[pluginName]);
       return plugin;
-    })
+    }).filter(function(plugin) { return plugin; })
   };
 };
 
