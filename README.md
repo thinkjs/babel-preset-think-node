@@ -24,7 +24,7 @@ npm install --save-dev babel-preset-think-node
 
 ### `.babelrc`
 
-```
+```js
 {
   "presets": ["think-node"]
 }
@@ -37,7 +37,7 @@ babel script.js --presets think-node
 
 ### Node API
 
-```
+```js
 require('babel-core').transform('code', {
   presets: ['think-node']
 });
@@ -47,7 +47,7 @@ require('babel-core').transform('code', {
 
 set option for all plugin in object first level, or specific plugin by plugin name.
 
-```
+```js
 {
   "presets": [
     ["think-node", {
