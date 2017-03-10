@@ -1,5 +1,5 @@
 # babel-preset-think-node
-babel plugin preset for thinkjs
+babel plugin preset for ThinkJS 3.x
 
 
 ### Included plugins
