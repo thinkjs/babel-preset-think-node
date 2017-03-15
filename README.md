@@ -1,7 +1,5 @@
 # babel-preset-think-node
 
-[![Build Status](https://travis-ci.org/thinkjs/babel-preset-think-node.svg?branch=master)](https://travis-ci.org/thinkjs/babel-preset-think-node)
-[![Coverage Status](https://coveralls.io/repos/github/thinkjs/babel-preset-think-node/badge.svg)](https://coveralls.io/github/thinkjs/babel-preset-think-node)
 [![npm](https://img.shields.io/npm/v/babel-preset-think-node.svg)](https://www.npmjs.com/package/babel-preset-think-node)
 
 
