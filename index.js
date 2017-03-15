@@ -1,13 +1,24 @@
 var plugins = {
   //es2015
-  "transform-es2015-modules-commonjs": require('babel-plugin-transform-es2015-modules-commonjs'),
+  'transform-es2015-modules-commonjs': [require('babel-plugin-transform-es2015-modules-commonjs'), {
+    loose: true,
+    strict: false,
+    noInterop: true
+  }],
   //es2016
-  "transform-exponentiation-operator": require('babel-plugin-transform-exponentiation-operator'),
+  'transform-exponentiation-operator': require('babel-plugin-transform-exponentiation-operator'),
   //es2017
-  "syntax-trailing-function-commas": require('babel-plugin-syntax-trailing-function-commas'),
-  "transform-async-to-generator": require('babel-plugin-transform-async-to-generator'),
-  "transform-runtime": [require('babel-plugin-transform-runtime'), {}],
-  "transform-object-rest-spread": require("babel-plugin-transform-object-rest-spread")
+  'syntax-trailing-function-commas': require('babel-plugin-syntax-trailing-function-commas'),
+  'transform-async-to-generator': require('babel-plugin-transform-async-to-generator'),
+  'transform-runtime': [require('babel-plugin-transform-runtime'), {
+    helpers: false, // defaults to true
+    polyfill: false, // defaults to true
+    regenerator: true, // defaults to true
+    moduleName: 'babel-runtime' // defaults to 'babel-runtime'
+  }],
+  'transform-object-rest-spread': [require('babel-plugin-transform-object-rest-spread'), {
+    useBuiltIns: true
+  }]
 };
 
 function extend() {
@@ -21,7 +32,8 @@ function extend() {
   return target;
 }
 
-function preset(opts) {
+function preset(context, opts) {
+  opts = opts || {}; 
   var pluginNames = Object.keys(plugins);
   var commonOpts = Object.keys(opts).filter(function(o) {
     return pluginNames.indexOf(o) === -1;
