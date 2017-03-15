@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-think-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "babel plugin preset for thinkjs in node6+",
   "main": "index.js",
   "scripts": {
