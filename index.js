@@ -3,7 +3,7 @@ var plugins = {
   'transform-es2015-modules-commonjs': [require('babel-plugin-transform-es2015-modules-commonjs'), {
     loose: true,
     strict: false,
-    noInterop: true
+    noInterop: false
   }],
   //es2016
   'transform-exponentiation-operator': require('babel-plugin-transform-exponentiation-operator'),
