@@ -33,7 +33,7 @@ function extend() {
 }
 
 function preset(context, opts) {
-  opts = opts || {}; 
+  opts = opts || {};
   var pluginNames = Object.keys(plugins);
   var commonOpts = Object.keys(opts).filter(function(o) {
     return pluginNames.indexOf(o) === -1;
@@ -45,8 +45,8 @@ function preset(context, opts) {
       if( !Array.isArray(plugin) ) {
         plugin = [plugin, {}];
       }
-      
-      if( opts[plugins[pluginName]] === false ) {
+
+      if(opts[pluginName] === false) {
         return undefined;
       }
 
