@@ -1,7 +1,7 @@
 {
   "name": "babel-preset-think-node",
   "version": "2.0.0",
-  "description": "babel plugin preset for thinkjs",
+  "description": "babel preset for ThinkJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
