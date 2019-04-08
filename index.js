@@ -5,7 +5,7 @@ module.exports = declare((api, options) => {
   api.assertVersion('^7.0.0');
 
   const defaultPresetOptions = {
-    targets: { node: '6' },
+    targets: { node: '8' },
     modules: 'auto',
     debug: false,
     useBuiltIns: 'usage',
